@@ -1,0 +1,20 @@
+{
+    "name": "vendor-name/module-name",
+    "description": "Module description.",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Author Name",
+            "email": "hello@example.com"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "VendorName\\ModuleName\\": ""
+        }
+    }
+}
