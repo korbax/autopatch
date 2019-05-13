@@ -8,8 +8,8 @@
         "AFL-3.0"
     ],
     "require": {
-        "php": "~7.0.0|~7.1.0",
-        "magento/framework": ">=100 <102"
+        "php":"~7.0.0|~7.1.0",
+        "magento/framework":">=100 <102"
     },
     "authors": [
         {
