@@ -2,4 +2,4 @@
 magento autopatch
 
 # install
-composer require xlear/autopatch
+composer require xlear/autopatch:dev-master
