@@ -20,6 +20,14 @@
   "scripts": {
     "post-install-cmd": [
       "../magento-patch/apply-patch.sh"
+    ],
+    "post-update-cmd": "Xlear\\Autopatch\\Console\\Plugin::postUpdate",
+    "post-package-install": [
+      "Xlear\\Autopatch\\Console\\Plugin::postPackageInstall"
+    ],
+    "post-install-cmd": [
+      "Xlear\\Autopatch\\Console\\Plugin::warmCache",
+      "phpunit -c app/"
     ]
   }
 }
