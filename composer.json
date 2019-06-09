@@ -1,7 +1,7 @@
 {
   "name": "xlear/autopatch",
   "description": "A Magento 2 module that creates a xlear/autopatche",
-  "type": "magento2-module",
+  "type": "composer-plugin",
   "version": "1.0.0",
   "license": [
     "OSL-3.0",
@@ -9,13 +9,17 @@
   ],
   "require": {
     "php": "~7.0.13|~7.1.0",
-    "magento/framework": "^101.0.0"
+    "magento/framework": "^101.0.0",
+    "composer-plugin-api": "^1.0"
   },
   "autoload": {
     "files": [ "registration.php" ],
     "psr-4": {
-      "Xlear\\Autopatch\\": ""
+      "Xlear\\Autopatch\\Console\\": "src/"
     }
+  },
+  "extra":{
+    "class":"PXlear\\Autopatch\\Console\\Plugin"
   },
   "scripts": {
     "post-install-cmd": [
