@@ -60,10 +60,4 @@ class Plugin implements PluginInterface, EventSubscriberInterface
             'post-update-cmd' => 'installOrUpdate',
         );
     }
-
-    public function installOrUpdate($event)
-    {
-        file_put_contents('/tmp/composer.log', __METHOD__ . "\n",FILE_APPEND);
-        file_put_contents('/tmp/composer.log', get_class($event) . "\n",FILE_APPEND);
-    }
 }
