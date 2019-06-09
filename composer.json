@@ -19,7 +19,7 @@
     }
   },
   "extra":{
-    "class":"PXlear\\Autopatch\\Console\\Plugin"
+    "class":"Xlear\\Autopatch\\Console\\Plugin"
   },
   "scripts": {
     "post-install-cmd": [
